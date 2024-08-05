@@ -8,6 +8,8 @@ TagManager:
   - Target
   - DeathZone
   - CutSceneCamera
+  - Grass
+  - Rock
   layers:
   - Default
   - TransparentFX
@@ -15,9 +17,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Grass
+  - Rock
+  - Ground
   - 
   - 
   - 

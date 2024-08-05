@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -70,6 +69,7 @@ public class PlayerController : MonoBehaviour
             lastStablePosition = transform.position;
             animator.SetBool("isJumping", false);
             animator.SetBool("isFalling", false);
+            animator.SetBool("isFallingFlat", false);
             isGrounded = true;
         }
     }
@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         animator.SetBool("isFalling", true);
+        animator.SetBool("isFallingFlat", true);
     }
 
     private void Respawn()
@@ -97,6 +98,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         animator.SetBool("isFalling", false);
+        animator.SetBool("isFallingFlat", false);
         animator.SetBool("isGettingUp", true);
         StartCoroutine(ResetGettingUp());
     }
