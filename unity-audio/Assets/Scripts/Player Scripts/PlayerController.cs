@@ -17,7 +17,24 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();  // Get the Rigidbody component on the Player GameObject
-        animator = GetComponent<Animator>();  // Get the Animator component on the Player GameObject
+        animator = GetComponentInChildren<Animator>();  // Get the Animator component from the Player or its children
+
+        if (rb == null)
+        {
+            Debug.LogError("Rigidbody component is missing!");
+        }
+
+        if (animator == null)
+        {
+            Debug.LogError("Animator component is missing!");
+            return;
+        }
+
+        if (startPosition == null)
+        {
+            Debug.LogError("Start position is not assigned!");
+        }
+
         lastStablePosition = transform.position;  // Initialize last stable position to the starting position
         isGrounded = true; // Initialize grounded state
     }
@@ -64,9 +81,20 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collision with: " + collision.gameObject.name);
+
         if (collision.gameObject.CompareTag("Ground"))
         {
+            Debug.Log("Collision with Ground detected.");
+
+            if (animator == null)
+            {
+                Debug.LogError("Animator is null.");
+                return;  // Prevent further execution if Animator is null
+            }
+
             lastStablePosition = transform.position;
+            Debug.Log("Setting animator parameters.");
             animator.SetBool("isJumping", false);
             animator.SetBool("isFalling", false);
             animator.SetBool("isFallingFlat", false);
