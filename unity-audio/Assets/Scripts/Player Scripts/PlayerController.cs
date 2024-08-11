@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;  // Movement speed of the player
-    public float jumpForce = 10f; // Force applied to jump
+    public float jumpForce = 6f; // Force applied to jump
     public float fallThreshold = -10f; // Threshold for falling off the platforms
     public Transform startPosition; // Reference to the start position
 
