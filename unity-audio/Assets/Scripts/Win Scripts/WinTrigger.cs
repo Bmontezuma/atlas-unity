@@ -12,6 +12,9 @@ public class WinTrigger : MonoBehaviour
     public GameObject winCanvas;
     public TextMeshProUGUI finalTimeText;
 
+    public AudioSource victoryAudioSource; // Assign in Inspector
+    public AudioSource bgmAudioSource;     // Assign in Inspector
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -26,6 +29,10 @@ public class WinTrigger : MonoBehaviour
                 // Call the Win method on the Timer script to handle win logic
                 playerTimer.Win(finalTimeText);
                 Debug.Log("Player won - final time: " + finalTimeText.text);
+
+                // Stop background music and play victory fanfare
+                bgmAudioSource.Stop();
+                victoryAudioSource.Play();
 
                 // Activate the WinCanvas
                 winCanvas.SetActive(true);

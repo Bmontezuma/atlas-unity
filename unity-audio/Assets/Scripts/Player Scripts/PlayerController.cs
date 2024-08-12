@@ -12,7 +12,17 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;  // Reference to the Rigidbody component
     private Vector3 lastStablePosition;  // To store the last stable position
     private Animator animator;  // Reference to the Animator component
-    private bool isGrounded;  // Track if the player is grounded
+
+    // Make these public so they can be accessed by other scripts
+    public bool isRunning { get; private set; }
+    public bool isJumping { get; private set; }
+    public bool isFalling { get; private set; }
+    public bool isGrounded { get; private set; }
+
+    // Landing sound clips
+    public AudioClip landingGrassSound;
+    public AudioClip landingRockSound;
+    public AudioSource landingAudioSource;
 
     void Start()
     {
@@ -51,7 +61,7 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        bool isRunning = horizontal != 0f || vertical != 0f;
+        isRunning = horizontal != 0f || vertical != 0f;
         animator.SetBool("isRunning", isRunning);
 
         if (isRunning)
@@ -66,6 +76,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+            isJumping = true;
             animator.SetBool("isJumping", true);
             isGrounded = false;
         }
@@ -95,10 +106,24 @@ public class PlayerController : MonoBehaviour
 
             lastStablePosition = transform.position;
             Debug.Log("Setting animator parameters.");
+            isJumping = false;
+            isFalling = false;
             animator.SetBool("isJumping", false);
             animator.SetBool("isFalling", false);
             animator.SetBool("isFallingFlat", false);
             isGrounded = true;
+
+            // Play the landing sound based on the surface type
+            if (collision.gameObject.CompareTag("GrassPlatform"))
+            {
+                landingAudioSource.clip = landingGrassSound;
+            }
+            else if (collision.gameObject.CompareTag("RockPlatform"))
+            {
+                landingAudioSource.clip = landingRockSound;
+            }
+
+            landingAudioSource.Play();
         }
     }
 
@@ -116,6 +141,7 @@ public class PlayerController : MonoBehaviour
         transform.position = topPosition;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
+        isFalling = true;
         animator.SetBool("isFalling", true);
         animator.SetBool("isFallingFlat", true);
     }
@@ -125,6 +151,7 @@ public class PlayerController : MonoBehaviour
         transform.position = lastStablePosition;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
+        isFalling = false;
         animator.SetBool("isFalling", false);
         animator.SetBool("isFallingFlat", false);
         animator.SetBool("isGettingUp", true);
