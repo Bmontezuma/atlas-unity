@@ -20,14 +20,14 @@ public class CutsceneController : MonoBehaviour
         timerCanvas.SetActive(false);
 
         // Manually trigger the animation
-        animator.Play("Intro03");
+        animator.Play("Intro01");
     }
 
     private void Update()
     {
         Debug.Log("CutsceneController Update");
         // Check if the cutscene animation has finished playing
-        if (!cutscenePlayed && animator.GetCurrentAnimatorStateInfo(0).IsName("Intro03") && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+        if (!cutscenePlayed && animator.GetCurrentAnimatorStateInfo(0).IsName("Intro01") && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
         {
             Debug.Log("Cutscene animation finished");
             cutscenePlayed = true;

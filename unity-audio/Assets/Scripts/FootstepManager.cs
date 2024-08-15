@@ -7,7 +7,7 @@ public class FootstepManager : MonoBehaviour
     public AudioClip grassFootsteps;
     public AudioClip rockFootsteps;
     public AudioMixerGroup runningMixerGroup;
-    public float footstepDelay = 0.5f;
+    public float footstepDelay = 0f;
     private PlayerController playerController;
     private string currentSurface = "Grass"; // Default surface
 
