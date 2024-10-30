@@ -1,7 +1,7 @@
 # ***Unity - AR Business Card***
 
 # ***Meet the Developer***
-[Pic](https://res.cloudinary.com/debxiwtbq/image/upload/v1730329185/20230831_075518_z88ljk.jpg)
+![Pic]([https://res.cloudinary.com/debxiwtbq/image/upload/v1730329185/20230831_075518_z88ljk.jpg](https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-1/346989429_899462764451875_7538672357379803910_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=frOqNWGVNvkQ7kNvgEIe_HX&_nc_zt=24&_nc_ht=scontent-dfw5-1.xx&_nc_gid=AwOn-rYgg0rWIlFYMFz87g_&oh=00_AYD2gts0bhCZqwUVI27Ay5Cz-NNJ-p2BFahPo7BYiLPM4g&oe=672877D1))
 "***I've had a passion for video game development since childhood, inspired by the Atari, TurboGrafix 16, Nintendo systems, Sega Saturn, and every console in between. Life took me in a different direction for a while—parenthood took priority, and I paused on my dreams to focus on family. My son’s birth was the most important part of my life, and I knew supporting him meant everything. I found my way back through modding for games like Borderlands, creating custom weapons, shields, and relics, and reigniting the excitement for game creation. Now that both of my sons are older, I’m able to focus again on game development with renewed wisdom and purpose. Check out my [LinkedIn](https://www.linkedin.com/in/brandon-montezuma/), Some of my work on [Artstation](https://www.artstation.com/brandonmontezuma6), or explore my projects on [GitHub](https://github.com/Bmontezuma).***"
 
 
