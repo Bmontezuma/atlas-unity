@@ -1,5 +1,5 @@
 # ***About The Developer!***
-![](https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-1/346989429_899462764451875_7538672357379803910_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=frOqNWGVNvkQ7kNvgEIe_HX&_nc_zt=24&_nc_ht=scontent-dfw5-1.xx&_nc_gid=A552ze1rtKoGxWORGAK6SWf&oh=00_AYDCJBv_MMqnpous-IytSoY_xD3b5nL2bAJIM4qQDmxwLw&oe=6728B011)
+![Pic](https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-1/346989429_899462764451875_7538672357379803910_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=frOqNWGVNvkQ7kNvgEIe_HX&_nc_zt=24&_nc_ht=scontent-dfw5-1.xx&_nc_gid=A552ze1rtKoGxWORGAK6SWf&oh=00_AYDCJBv_MMqnpous-IytSoY_xD3b5nL2bAJIM4qQDmxwLw&oe=6728B011)
 ***"I've had a passion for video game development since childhood, inspired by the Atari, TurboGrafix 16, Nintendo systems, Sega Saturn, and every console in between. Life took me in a different direction for a while—parenthood took priority, and I paused on my dreams to focus on family. My son’s birth was the most important part of my life, and I knew supporting him meant everything. I found my way back through modding for games like Borderlands, creating custom weapons, shields, and relics, and reigniting the excitement for game creation. Now that both of my sons are older, I’m able to focus again on game development with renewed wisdom and purpose. Check out my LinkedIn, Some of my work on Artstation, or explore my projects on GitHub."***
 
 Repo:[atlas-unity](https://github.com/Bmontezuma/atlas-unity/tree/main)
@@ -8,8 +8,7 @@ Repo:[atlas-unity](https://github.com/Bmontezuma/atlas-unity/tree/main)
 Directory:[unity-audio](https://github.com/Bmontezuma/atlas-unity/tree/main/unity-audio)
 
 # Platformer Project
-
-![pic](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2019/12/c1dfd96eea8cc2b62785.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20241031%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20241031T003626Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1fb92ee1e410e975ab1ed7410b56c4e27646c9813c56218ffacc951ad9307092](https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/449526513_1421746988539635_8392174129364370833_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=oprmVtuHgEIQ7kNvgEUf9Kc&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=AC54vf8n02RpelGknmhn5nH&oh=00_AYCAweB01Z-JibOkm1AuVaey83Nl-muCYCgfqYT9Q-jWbg&oe=67291F5C)(https://res.cloudinary.com/debxiwtbq/image/upload/v1730373982/449526513_1421746988539635_8392174129364370833_n_ew0qlj.jpg)
+![pic](https://res.cloudinary.com/debxiwtbq/image/upload/v1730373982/449526513_1421746988539635_8392174129364370833_n_ew0qlj.jpg)
 
 This platformer game provides an immersive experience with dynamic audio, environmental soundscapes, and responsive controls. Each level has unique background music, ambient sounds that change with the player's proximity, and responsive sound effects based on the player's actions and interactions with various surfaces.
 
