@@ -8,6 +8,7 @@ Repo:[atlas-unity](https://github.com/Bmontezuma/atlas-unity/tree/main)
 Directory:[unity-audio](https://github.com/Bmontezuma/atlas-unity/tree/main/unity-audio)
 
 # Platformer Project
+
 ![gif](https://s3.eu-west-3.amazonaws.com/hbtn.intranet/uploads/medias/2019/12/c1dfd96eea8cc2b62785.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4MYA5JM5DUTZGMZG%2F20241031%2Feu-west-3%2Fs3%2Faws4_request&X-Amz-Date=20241031T003626Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1fb92ee1e410e975ab1ed7410b56c4e27646c9813c56218ffacc951ad9307092)
 
 This platformer game provides an immersive experience with dynamic audio, environmental soundscapes, and responsive controls. Each level has unique background music, ambient sounds that change with the player's proximity, and responsive sound effects based on the player's actions and interactions with various surfaces.
