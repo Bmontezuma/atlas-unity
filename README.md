@@ -103,9 +103,9 @@ In this AR experience, your business card layout appears when the device detects
 
 ### Repository and Directory Structure
 
-- **GitHub Repository**: `atlas-unity`
-- **Directory**: `unity_ar_business_card`
-- **Main Scene**: `Assets/Scenes/ARBusinessCard.unity`
+- **GitHub Repository**: [atlas-unity](https://github.com/Bmontezuma/atlas-unity/tree/main)
+- **Directory**: [unity_ar_business_card](https://github.com/Bmontezuma/atlas-unity/tree/main/unity_ar_business_card)
+- **Main Scene**: [Assets/Scenes/ARBusinessCard.unity](https://github.com/Bmontezuma/atlas-unity/tree/main/unity_ar_business_card/Assets/Scenes)
 
 ### Build Information
 
@@ -116,8 +116,8 @@ Builds ├── iOS │ └── [Build files] └── Android ├── ARB
 
 
 - **Build Files**:
-- `unity-ar_business_card-iOS.zip`
-- `unity-ar_business_card-Android.zip`
+- [unity-ar_business_card-iOS.zip](https://drive.google.com/file/d/1O5qBP602dS_8EGkIil_cTfQDhbxxN9EN/view)
+- [unity-ar_business_card-Android.zip](https://drive.google.com/file/d/1bSny8aVxdNMvF1PbR4rE9DWeRIwIv7EH/view)
 
 **Download Links**:  
 - [iOS Build (.zip)](https://example-link-ios.zip)
